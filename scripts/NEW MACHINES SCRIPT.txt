@@ -1,0 +1,27 @@
+INSTALL GIT
+CLONE REPO
+
+DOWNLOAD sudo
+GIVE admin USER PERMISSIONS
+
+DOWNLOAD ufw
+ALLOW PORTS 22/TCP (AND OTHER NECESARRY PORTS FOR K8S TO RUN) IN ufw
+ENABLE SERVICE UFW 
+CHECK IF openssh IS ALREADY INSTALLED
+	IF NOT INSTALLED
+		INSTALL SSH
+INSTALL CURL
+
+
+
+
+
+
+
+
+
+
+
+NOTAS:
+Primero permitir accesos desde cualquier ip desde los puertos 22, 80, 443 y demas puertos necesarios
+Posteriormente es necesario limitar ese numero de ip's a solo las ips conocidas de las maquinas virtuales y demas computadoras con acceso
